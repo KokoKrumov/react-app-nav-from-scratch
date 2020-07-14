@@ -1,7 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
-// import './Search.css'
 
-export default ({items, selected, onChangeSelected}) => {
+export default ({items, selected, onChangeSelected, label}) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const ref = useRef();
@@ -57,7 +56,7 @@ export default ({items, selected, onChangeSelected}) => {
         <div ref={ref}>
             <div className="ui form segment">
                 <div className="field">
-                    <label>Titles</label>
+                    <label>{label}</label>
                     <div
                         onClick={() => {
                             setIsOpen(!isOpen)

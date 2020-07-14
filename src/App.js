@@ -7,6 +7,7 @@ import EventsList from "./components/EventsList";
 import './App.css';
 import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate";
 
 const items = [
     {
@@ -47,11 +48,15 @@ export default () => {
                 </button>
                 {showDropdown ?
                     <Dropdown
+                        label='Titles'
                         selected={selected}
                         onChangeSelected={setSelected}
                         items={items}/> :
                     null
                 }
+            </Route>
+            <Route path='/translate'>
+                <Translate/>
             </Route>
         </div>
     )
