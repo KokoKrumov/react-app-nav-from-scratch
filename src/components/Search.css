@@ -1,0 +1,12 @@
+.searchmatch {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.list.celled  .item {
+    padding: 1rem 0.5rem;
+}
+
+.list.celled  .header {
+    margin-bottom: 0.5rem !important;
+}

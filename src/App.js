@@ -2,10 +2,10 @@ import React from 'react';
 import Navigation from "./components/Navigation";
 import Accordion from "./components/Accordion";
 import Route from "./components/Route";
-import ReviewsList from "./components/ReviewList";
 import EventsList from "./components/EventsList";
 
 import './App.css';
+import Search from "./components/Search";
 
 const items = [
     {
@@ -30,8 +30,8 @@ export default () => {
             <Route path='/'>
                 <Accordion items={items}/>
             </Route>
-            <Route path='/reviews'>
-                <ReviewsList/>
+            <Route path='/search'>
+                <Search/>
             </Route>
             <Route path='/events'>
                 <EventsList/>
