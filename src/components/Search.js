@@ -30,10 +30,6 @@ export default () => {
             setResult(data.query.search);
         }
 
-
-        console.log(term)
-        console.log(results)
-
         if (term && !results.length) {
             //ако имаме default търсене, и нямаме списък с резултати, т.е. това да се случи при първо зареждане
             search();
